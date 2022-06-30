@@ -130,10 +130,12 @@ body {
 }
 .product-card {
   border: 1px solid #eeeeee;
+  width: 370px;
+  height: 404px;
 }
 .product-card img {
   width: 370px;
-  height: 404px;
+  height: 294px;
   object-fit: cover;
 }
 .product-title {
