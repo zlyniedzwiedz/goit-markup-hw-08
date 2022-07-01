@@ -63,7 +63,7 @@ body {
   width: 696px;
   font-weight: 900;
   font-size: 44px;
-
+  margin: auto;
   text-align: center;
 
   text-transform: uppercase;
@@ -86,19 +86,20 @@ body {
   border-radius: 4px;
   border: none;
 }
+
 .main-list {
   list-style: none;
 }
 .main-list h4 {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 14;
+  line-height: 1.14;
 }
 .main-list p {
   font-weight: 400;
   font-size: 16px;
   color: var(--contacts-header-color);
-  line-height: 1, 71;
+  line-height: 1.71;
 }
 .navigation-footer {
   width: 100%;
