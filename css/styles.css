@@ -14,7 +14,7 @@ body {
 }
 .navigation-menu {
   display: flex;
-  font-style: medium;
+
   justify-content: space-around;
   width: 254px;
 }
@@ -102,7 +102,6 @@ body {
   line-height: 1.14;
 }
 .main-list p {
-  font-weight: 400;
   font-size: 16px;
   color: var(--contacts-header-color);
   line-height: 1.71;
@@ -168,7 +167,6 @@ body {
   color: var(--main-text-color);
 }
 .product-description {
-  font-weight: 400;
   font-size: 16px;
 
   color: var(--contacts-header-color);
@@ -190,7 +188,6 @@ body {
   color: var(--main-text-color);
 }
 .team-card-description {
-  font-weight: 400;
   font-size: 16px;
   color: var(--contacts-header-color);
 }
