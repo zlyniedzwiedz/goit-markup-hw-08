@@ -14,10 +14,9 @@ body {
 }
 .container {
   width: 1200px;
+  margin: auto;
 }
 .navigation-menu {
-  display: flex;
-
   justify-content: space-around;
   width: 254px;
 }
@@ -144,14 +143,12 @@ body {
   font-size: 14px;
 }
 .filters {
-  justify-items: center;
-}
-.filters ul {
-  list-style-type: none;
   display: flex;
-  width: 100vw;
-  height: 54px;
-  
+  justify-content: center;
+}
+.filters li {
+  list-style-type: none;
+  display: inline;
 }
 .filters button {
   color: #000000;
@@ -171,15 +168,14 @@ body {
   color: #ffffff;
 }
 .product-card {
-  border: 1px solid #eeeeee;
   width: 370px;
   height: 404px;
+  margin: 15px;
 }
 
 .product-card img {
   width: 370px;
   height: 294px;
-  object-fit: cover;
 }
 .product-title {
   font-weight: 700;
@@ -227,9 +223,6 @@ body {
   text-align: center;
 }
 
-.lorem {
-  display: flex;
-}
 .feature {
   width: 270px;
 
@@ -246,5 +239,7 @@ body {
   height: fit-content;
 }
 .portfolio-cards {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
