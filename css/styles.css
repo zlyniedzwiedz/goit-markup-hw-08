@@ -199,6 +199,9 @@ body {
   border: 1px solid #eeeeee;
   width: 270px;
   height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-card img {
   width: 270px;
@@ -209,11 +212,14 @@ body {
   font-size: 16px;
 
   color: var(--main-text-color);
+  text-align: center;
 }
 .team-card-description {
   font-size: 16px;
   color: var(--contacts-header-color);
+  text-align: center;
 }
+
 .lorem {
   display: flex;
 }
