@@ -99,6 +99,13 @@ body {
 .main-list {
   list-style: none;
 }
+.main-list-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
 .main-list h4 {
   font-weight: 500;
   font-size: 16px;
@@ -176,6 +183,13 @@ body {
 }
 .team figure {
   display: inline-block;
+}
+.team-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 .team-card {
   border: 1px solid #eeeeee;
