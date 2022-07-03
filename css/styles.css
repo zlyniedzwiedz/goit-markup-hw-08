@@ -174,7 +174,9 @@ body {
 
   color: var(--contacts-header-color);
 }
-
+.team figure {
+  display: inline-block;
+}
 .team-card {
   border: 1px solid #eeeeee;
   width: 270px;
