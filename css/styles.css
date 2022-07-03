@@ -12,6 +12,9 @@ body {
   color: var(--main-text-color);
   background-color: var(--body-background-color);
 }
+.container {
+  width: 1200px;
+}
 .navigation-menu {
   display: flex;
 
@@ -141,10 +144,14 @@ body {
   font-size: 14px;
 }
 .filters {
+  justify-items: center;
+}
+.filters ul {
   list-style-type: none;
   display: flex;
-  width: 257px;
+  width: 100vw;
   height: 54px;
+  
 }
 .filters button {
   color: #000000;
@@ -237,4 +244,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   height: fit-content;
+}
+.portfolio-cards {
+
 }
