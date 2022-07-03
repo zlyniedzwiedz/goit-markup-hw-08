@@ -99,6 +99,10 @@ body {
 .main-list {
   list-style: none;
 }
+
+.main-list li {
+  display: inline;
+}
 .main-list-title {
   font-family: "Roboto";
   font-weight: 700;
@@ -209,4 +213,22 @@ body {
 .team-card-description {
   font-size: 16px;
   color: var(--contacts-header-color);
+}
+.lorem {
+  display: flex;
+}
+.feature {
+  width: 270px;
+
+  text-align: left;
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.feature-content {
+  font-size: 14px;
+  line-height: 1.71;
+  height: fit-content;
 }
