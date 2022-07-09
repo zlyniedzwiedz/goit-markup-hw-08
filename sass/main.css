@@ -122,6 +122,14 @@
   margin-right: 30px;
 }
 
+.whatwedo-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
 .whatwedo-list {
   list-style: none;
   padding: 0;
@@ -132,13 +140,6 @@
 }
 .whatwedo-list li:not(:last-child) {
   margin-right: 30px;
-}
-.whatwedo-list-title {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
 }
 .whatwedo-list h4 {
   font-weight: 500;
