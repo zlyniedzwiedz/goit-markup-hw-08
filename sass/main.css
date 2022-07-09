@@ -147,6 +147,9 @@
   line-height: 1.71;
 }
 
+.team {
+  background: #F5F4FA;
+}
 .team figure {
   display: inline-block;
   margin-left: 15px;
