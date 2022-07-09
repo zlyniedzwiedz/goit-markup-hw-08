@@ -1,8 +1,9 @@
 .features-list {
   display: flex;
+  padding-top: 94px;
+  width: 100%;
 }
 .feature {
-  width: 270px;
   display: block;
 
   letter-spacing: 0.03em;
@@ -11,9 +12,9 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    margin-bottom: 10px;
   }
   &-content {
-    margin-top: 10px;
     font-size: 14px;
     line-height: 1.71;
     color: $contacts-header-color;

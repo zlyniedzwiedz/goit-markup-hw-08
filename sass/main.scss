@@ -13,6 +13,7 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: $main-text-color;
   background-color: $body-background-color;
+  box-sizing: border-box;
 }
 ul,
 p {
@@ -21,8 +22,9 @@ p {
   margin: 0;
 }
 .section {
-  padding-top: 94px 0px 94px 0px;
-}
+  padding-bottom: 94px;
+  padding-top: 94px;
+ }
 .container {
   width: 1200px;
   margin: auto;
