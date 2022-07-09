@@ -141,11 +141,6 @@
 .whatwedo-list li:not(:last-child) {
   margin-right: 30px;
 }
-.whatwedo-list h4 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.14;
-}
 .whatwedo-list p {
   font-size: 16px;
   color: #757575;
