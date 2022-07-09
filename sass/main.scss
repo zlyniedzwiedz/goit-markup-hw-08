@@ -1,0 +1,29 @@
+@import "utils/vars";
+@import "components/navigation";
+@import "components/slider";
+@import "components/features";
+@import "components/whatwedo";
+@import "components/team";
+@import "components/footer";
+
+@import "components/filters";
+@import "components/portfolio";
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: $main-text-color;
+  background-color: $body-background-color;
+}
+ul,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.section {
+  padding-top: 94px 0px 94px 0px;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}

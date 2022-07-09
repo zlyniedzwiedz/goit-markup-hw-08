@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  height: 252px;
+  background-color: $background-color;
+  a {
+    text-decoration: none;
+  }
+  &-header {
+    color: #ffffff;
+  }
+
+  a:focus,
+  a:hover {
+    color: $accent-color;
+  }
+
+  &-content {
+    padding-top: 60px;
+  }
+  address {
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+.contact-links {
+  a {
+    display: block;
+    font-size: 14px;
+
+    color: $contacts-color;
+    margin-top: 9px;
+  }
+}

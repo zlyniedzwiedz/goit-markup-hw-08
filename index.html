@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize-css.css" />
+    <link rel="stylesheet" href="sass/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,122 +17,129 @@
 
   <body>
     <header>
-      <section class="navigation">
+      <section class="navigation section">
         <div class="container">
           <div class="main-navbar">
-            <a href="index.html"
-              ><h2 class="navigation-logo">
-                <span class="navigation-name">Web</span>Studio
-              </h2>
-            </a>
-            <nav class="navigation-menu">
-              <a href="index.html">Agencja</a>
+            <div class="main-navbar-left-group">
+              <a href="index.html"
+                ><h2 class="navigation-logo">
+                  <span class="navigation-name">Web</span>Studio
+                </h2>
+              </a>
+              <nav>
+                <ul class="navigation-menu">
+                  <li><a href="index.html">Agencja</a></li>
 
-              <a href="portfolio.html">Portfolio</a>
+                  <li><a href="portfolio.html">Portfolio</a></li>
 
-              <a href="#">Kontakt</a>
-            </nav>
-            <div class="contact-links-header">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-
-              <a href="tel:+48111111111">+48 111 111 111</a>
+                  <li><a href="#">Kontakt</a></li>
+                </ul>
+              </nav>
             </div>
+
+            <ul class="contact-links-header">
+              <li>
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+
+              <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+            </ul>
           </div>
         </div>
       </section>
     </header>
 
     <main>
-      <section class="slider">
-      <div class="container">
-        <div class="main-header">
-          <div class="main-header-content">
-            <h1 class="main-header-text">
-              EFEKTYWNE ROZWIĄZANIA WASZEGO BIZNESU
-            </h1>
-
-            <button type="button" class="main-header-button">
-              Zamów usługę
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="features">
+      <section class="slider section">
         <div class="container">
-        <ul class="main-list lorem">
-          <li class="feature">
-            <h4 class="feature-title">LOREM IPSUM</h4>
-            <p class="feature-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
+          <div class="main-header">
+            <div class="main-header-content">
+              <h1 class="main-header-text">
+                EFEKTYWNE ROZWIĄZANIA WASZEGO BIZNESU
+              </h1>
 
-          <li class="feature">
-            
-            <h4 class="feature-title">LOREM IPSUM</h4>
-            <p class="feature-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-
-          <li class="feature">
-            <h4 class="feature-title">LOREM IPSUM</h4>
-            <p class="feature-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-
-          <li class="feature">
-            <h4 class="feature-title">LOREM IPSUM</h4>
-            <p class="feature-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
-      </div>
-      </section>
-      <section class="whatwedo">
-        <div class="container">>
-          <h2 class="main-list-title">Czym się zajmujemy</h2>
-          <div class="main-list">
-            <ul>
-              <li>
-                <img
-                  src="images/img1.jpg"
-                  alt="A person typing on a keyboard"
-                  width="370"
-                  height="294"
-                />
-              </li>
-
-              <li>
-                <img
-                  src="images/img2.jpg"
-                  alt="A man holding a phone"
-                  width="370"
-                  height="294"
-                />
-              </li>
-
-              <li>
-                <img
-                  src="images/img3.jpg"
-                  alt="A person choosing a color"
-                  width="370"
-                  height="294"
-                />
-              </li>
-            </ul>
+              <button type="button" class="main-header-button">
+                Zamów usługę
+              </button>
+            </div>
           </div>
         </div>
-        <section>
+      </section>
 
-        <section class="team">
-          <div class="container">
+      <section class="features section">
+        <div class="container">
+          <ul class="features-list">
+            <li class="feature">
+              <h4 class="feature-title">LOREM IPSUM</h4>
+              <p class="feature-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+
+            <li class="feature">
+              <h4 class="feature-title">LOREM IPSUM</h4>
+              <p class="feature-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+
+            <li class="feature">
+              <h4 class="feature-title">LOREM IPSUM</h4>
+              <p class="feature-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+
+            <li class="feature">
+              <h4 class="feature-title">LOREM IPSUM</h4>
+              <p class="feature-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="whatwedo section">
+        <div class="container">
+          <h2 class="whatwedo-title">Czym się zajmujemy</h2>
+
+          <ul class=" whatwedo-list">
+            <li>
+              <img
+                src="images/img1.jpg"
+                alt="A person typing on a keyboard"
+                width="370"
+                height="294"
+              />
+            </li>
+
+            <li>
+              <img
+                src="images/img2.jpg"
+                alt="A man holding a phone"
+                width="370"
+                height="294"
+              />
+            </li>
+
+            <li>
+              <img
+                src="images/img3.jpg"
+                alt="A person choosing a color"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="team section">
+        <div class="container">
           <h2 class="team-title">Nasz zespół</h2>
           <figure class="team-card">
             <img
@@ -182,23 +190,24 @@
             </figcaption>
           </figure>
         </div>
-        </sectio>
-      </div>
+      </section>
     </main>
 
-    <footer class="navigation-footer">
+    <footer class="footer section">
       <div class="container">
-        <a href="index.html"
-          ><h2 class="navigation-footer-header">
-            <span class="navigation-name">Web</span>Studio
-          </h2></a
-        >
+        <div class="footer-content">
+          <a href="index.html"
+            ><h2 class="footer-header">
+              <span class="navigation-name">Web</span>Studio
+            </h2></a
+          >
 
-        <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-        <div class="contact-links">
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+          <div class="contact-links">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
 
-          <a href="tel:+48111111111">+48 111 111 111</a>
+            <a href="tel:+48111111111">+48 111 111 111</a>
+          </div>
         </div>
       </div>
     </footer>

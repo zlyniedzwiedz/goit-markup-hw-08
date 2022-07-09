@@ -1,0 +1,24 @@
+.features-list {
+  display: flex;
+}
+.feature {
+  width: 270px;
+  display: block;
+
+  letter-spacing: 0.03em;
+
+  &-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  &-content {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $contacts-header-color;
+  }
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,66 @@
+.navigation {
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 254px;
+  }
+
+  &-name {
+    font-family: "Raleway", sans-serif;
+    color: $accent-color;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  &-logo {
+    color: #000000;
+    margin-right: 93px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-left-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contact-links-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-left: 371px;
+  li:not(:last-child) {
+    margin-right: 50px;
+  }
+  a {
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: $contacts-header-color;
+  }
+}
