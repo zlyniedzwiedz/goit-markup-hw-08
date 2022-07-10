@@ -129,17 +129,15 @@
   line-height: 1.17;
   text-align: center;
 }
+.whatwedo ul {
+  display: flex;
+  gap: 30px;
+}
 
 .whatwedo-list {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-.whatwedo-list li {
-  display: inline-block;
-}
-.whatwedo-list li:not(:last-child) {
-  margin-right: 30px;
 }
 .whatwedo-list p {
   font-size: 16px;
@@ -148,18 +146,19 @@
 }
 
 .team {
-  background: #F5F4FA;
+  background: #f5f4fa;
+}
+.team ul {
+  display: flex;
+  gap: 30px;
 }
 .team figure {
   display: inline-block;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0;
 }
-.team figure:first-of-type {
-  margin-left: 0;
-}
-.team figure:last-of-type {
-  margin-right: 0;
+.team figure figcaption {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .team-title {
   font-family: "Roboto";
@@ -176,8 +175,8 @@
   border-radius: 0px 0px 4px 4px;
 }
 .team-card img {
-  width: 270px;
   height: 260px;
+  max-width: 100%;
 }
 .team-card-title {
   font-weight: 500;
@@ -189,6 +188,7 @@
   font-size: 16px;
   color: #757575;
   text-align: center;
+  margin-top: 10px;
 }
 
 .footer {
@@ -224,7 +224,6 @@
 .filters {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
   margin-bottom: 56px;
 }
 .filters li {
@@ -248,6 +247,7 @@
 .filters button:focus, .filters button:hover {
   background-color: #2196f3;
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .product-title {
@@ -255,12 +255,14 @@
   font-size: 18px;
   color: #212121;
   padding-top: 20px;
+  line-height: 2;
 }
 .product-description {
   font-size: 16px;
   padding-top: 4px;
   color: #757575;
   padding-bottom: 20px;
+  line-height: 1.87;
 }
 .product-card {
   width: 370px;
@@ -287,6 +289,14 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.portfolio-cards ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.portfolio-cards figure {
+  margin: 0;
+}
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
@@ -310,4 +320,8 @@ p {
 .container {
   width: 1200px;
   margin: auto;
+}
+
+address {
+  font-style: normal;
 }/*# sourceMappingURL=main.css.map */

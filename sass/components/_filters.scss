@@ -1,7 +1,7 @@
 .filters {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+
   margin-bottom: 56px;
 
   li {
@@ -10,12 +10,12 @@
   }
   button {
     height: 38px;
-    color: #000000;
+    color: $black-text-color;
     font-weight: 500;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    background-color: #f5f4fa;
+    background-color: $button-background-color;
     border-radius: 4px;
     border: none;
     text-align: center;
@@ -26,7 +26,9 @@
     &:focus,
     &:hover {
       background-color: $accent-color;
-      color: #ffffff;
+      color: $alternative-text-color;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
   }
 }
