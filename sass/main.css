@@ -320,7 +320,8 @@ p {
 .container {
   width: 1200px;
   margin: auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 address {
