@@ -5,32 +5,33 @@
 @import "components/whatwedo";
 @import "components/team";
 @import "components/footer";
-
+@import "components/clients";
 @import "components/filters";
 @import "components/portfolio";
 
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  color: $main-text-color;
-  background-color: $body-background-color;
-  box-sizing: border-box;
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: $main-text-color;
+    background-color: $body-background-color;
+    box-sizing: border-box;
 }
+
 ul,
 p {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 .container {
-  width: 1200px;
-  margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+    width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 address {
-  font-style: normal;
+    font-style: normal;
 }

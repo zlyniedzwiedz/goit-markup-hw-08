@@ -1,186 +1,215 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studio</title>
-    <link rel="stylesheet" href="css/normalize-css.css" />
-    <link rel="stylesheet" href="sass/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Studio</title>
+        <link rel="stylesheet" href="css/normalize-css.css" />
+        <link rel="stylesheet" href="sass/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    </head>
 
-  <body>
-    <header>
-      <section class="navigation">
-        <div class="container">
-          <div class="main-navbar">
-            <div class="main-navbar-left-group">
-              <a href="index.html"
-                ><h2 class="navigation-logo">
-                  <span class="navigation-name">Web</span>Studio
-                </h2>
-              </a>
-              <nav>
-                <ul class="navigation-menu">
-                  <li><a href="index.html">Agencja</a></li>
+    <body>
+        <header>
+            <section class="navigation">
+                <div class="container">
+                    <div class="main-navbar">
+                        <div class="main-navbar-left-group">
+                            <a href="index.html"
+                                ><h2 class="navigation-logo"><span class="navigation-name">Web</span>Studio</h2>
+                            </a>
+                            <nav>
+                                <ul class="navigation-menu">
+                                    <li><a class="navigation-menu-link" href="index.html">Agencja</a></li>
 
-                  <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a class="navigation-menu-link" href="portfolio.html">Portfolio</a></li>
 
-                  <li><a href="#">Kontakt</a></li>
-                </ul>
-              </nav>
+                                    <li><a class="navigation-menu-link" href="#">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <ul class="navigation-contact">
+                            <li>
+                                <a href="mailto:info@devstudio.com" class="navigation-contact-link"
+                                    ><svg class="icon icon-envelope" width="16" height="12" viewbox="0 0 16 12">
+                                        <use xlink:href="images/icons.svg#icon-envelope"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="tel:+48111111111" class="navigation-contact-link">
+                                    <svg class="icon icon-smartphone" width="10" height="16" viewbox="0 0 10 16">
+                                        <use xlink:href="images/icons.svg#icon-smartphone"></use>
+                                    </svg>
+                                    +48 111 111 111
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <div class="container section">
+                <section class="filters">
+                    <ul>
+                        <li><button type="button">Wszystkie</button></li>
+                        <li><button type="button">Strony</button></li>
+                        <li><button type="button">Aplikacje</button></li>
+                        <li><button type="button">Design</button></li>
+                        <li><button type="button">Marketing</button></li>
+                    </ul>
+                </section>
+                <section class="portfolio">
+                    <div class="portfolio-cards">
+                        <ul>
+                            <li>
+                                <figure class="product-card">
+                                    <img src="images/technocrack.jpg" alt="Technocrack" />
+                                    <figcaption>
+                                        <p class="product-title">Technocrack</p>
+                                        <p class="product-description">Strona internetowa</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="product-card">
+                                    <img src="images/grafikaneworlean.jpg" alt="Grafika New Orlean vs Golden Star" />
+                                    <figcaption>
+                                        <p class="product-title">Grafika New Orlean vs Golden Star</p>
+                                        <p class="product-description">Design</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="product-card">
+                                    <img src="images/restauracjaseafood.jpg" alt="Restauracja Seafood" />
+                                    <figcaption>
+                                        <p class="product-title">Restauracja Seafood</p>
+                                        <p class="product-description">Aplikacja</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="product-card">
+                                    <img src="images/projektprime.jpg" alt="Projekt Prime" />
+                                    <figcaption>
+                                        <p class="product-title">Projekt Prime</p>
+                                        <p class="product-description">Marketing</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="product-card">
+                                    <img src="images/projektboxes.jpg" alt="Projekt Boxes" />
+                                    <figcaption>
+                                        <p class="product-title">Projekt Boxes</p>
+                                        <p class="product-description">Aplikacja</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="product-card">
+                                    <img src="images/inspiration.jpg" alt="Inspiration without borders" />
+                                    <figcaption>
+                                        <p class="product-title">Inspiration without borders</p>
+                                        <p class="product-description">Strona internetowa</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="product-card">
+                                    <img src="images/magazinelimited.jpg" alt="Magazyn limited" />
+                                    <figcaption>
+                                        <p class="product-title">Magazyn limited Edition</p>
+                                        <p class="product-description">Design</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="product-card">
+                                    <img src="images/projektlab.jpg" alt="Projekt LAB" />
+                                    <figcaption>
+                                        <p class="product-title">Projekt LAB</p>
+                                        <p class="product-description">Marketing</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="product-card">
+                                    <img src="images/growingbusiness.jpg" alt="Growing Business" />
+                                    <figcaption>
+                                        <p class="product-title">Growing Business</p>
+                                        <p class="product-description">Aplikacja</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
+        </main>
 
-            <ul class="contact-links-header">
-              <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-left">
+                    <div class="footer-content">
+                        <a href="index.html"
+                            ><h2 class="footer-header"><span class="navigation-name">Web</span>Studio</h2></a
+                        >
 
-              <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </header>
+                        <address>
+                            m. Warszawa, Aleje Jerozolimskie 21
+                            <div class="contact-links">
+                                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
 
-    <main>
-      <div class="container section">
-        <section class="filters">
-          <ul>
-            <li><button type="button">Wszystkie</button></li>
-            <li><button type="button">Strony</button></li>
-            <li><button type="button">Aplikacje</button></li>
-            <li><button type="button">Design</button></li>
-            <li><button type="button">Marketing</button></li>
-          </ul>
-        </section>
-        <section class="portfolio">
-          <div class="portfolio-cards">
-            <ul>
-              <li>
-                <figure class="product-card">
-                  <img src="images/technocrack.jpg" alt="Technocrack" />
-                  <figcaption>
-                    <p class="product-title">Technocrack</p>
-                    <p class="product-description">Strona internetowa</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="product-card">
-                  <img
-                    src="images/grafikaneworlean.jpg"
-                    alt="Grafika New Orlean vs Golden Star"
-                  />
-                  <figcaption>
-                    <p class="product-title">
-                      Grafika New Orlean vs Golden Star
-                    </p>
-                    <p class="product-description">Design</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="product-card">
-                  <img
-                    src="images/restauracjaseafood.jpg"
-                    alt="Restauracja Seafood"
-                  />
-                  <figcaption>
-                    <p class="product-title">Restauracja Seafood</p>
-                    <p class="product-description">Aplikacja</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="product-card">
-                  <img src="images/projektprime.jpg" alt="Projekt Prime" />
-                  <figcaption>
-                    <p class="product-title">Projekt Prime</p>
-                    <p class="product-description">Marketing</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="product-card">
-                  <img src="images/projektboxes.jpg" alt="Projekt Boxes" />
-                  <figcaption>
-                    <p class="product-title">Projekt Boxes</p>
-                    <p class="product-description">Aplikacja</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="product-card">
-                  <img
-                    src="images/inspiration.jpg"
-                    alt="Inspiration without borders"
-                  />
-                  <figcaption>
-                    <p class="product-title">Inspiration without borders</p>
-                    <p class="product-description">Strona internetowa</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="product-card">
-                  <img src="images/magazinelimited.jpg" alt="Magazyn limited" />
-                  <figcaption>
-                    <p class="product-title">Magazyn limited Edition</p>
-                    <p class="product-description">Design</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="product-card">
-                  <img src="images/projektlab.jpg" alt="Projekt LAB" />
-                  <figcaption>
-                    <p class="product-title">Projekt LAB</p>
-                    <p class="product-description">Marketing</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="product-card">
-                  <img
-                    src="images/growingbusiness.jpg"
-                    alt="Growing Business"
-                  />
-                  <figcaption>
-                    <p class="product-title">Growing Business</p>
-                    <p class="product-description">Aplikacja</p>
-                  </figcaption>
-                </figure>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </main>
+                                <a href="tel:+48111111111">+48 111 111 111</a>
+                            </div>
+                        </address>
+                    </div>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <a href="index.html"
-            ><h2 class="footer-header">
-              <span class="navigation-name">Web</span>Studio
-            </h2></a
-          >
-
-          <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-          <div class="contact-links">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-
-            <a href="tel:+48111111111">+48 111 111 111</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+                    <div class="footer-social">
+                        <h4 class="footer-social-title">Dołącz do nas</h4>
+                        <ul class="footer-social-list">
+                            <li class="footer-social-list-element">
+                                <a class="footer-social-icon" href="#">
+                                    <svg class="icon icon-instagram-2" width="20" height="20" viewbox="0 0 20 20">
+                                        <use xlink:href="images/icons.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-list-element">
+                                <a class="footer-social-icon" href="#">
+                                    <svg class="icon icon-twitter-1" width="20" height="20" viewbox="0 0 20 20">
+                                        <use xlink:href="images/icons.svg#icon-twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-list-element">
+                                <a class="footer-social-icon" href="#">
+                                    <svg class="icon icon-facebook-1" width="20" height="20" viewbox="0 0 20 20">
+                                        <use xlink:href="images/icons.svg#icon-facebook-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-list-element">
+                                <a class="footer-social-icon" href="#">
+                                    <svg class="icon icon-linkedin-1" width="20" height="20" viewbox="0 0 20 20">
+                                        <use xlink:href="images/icons.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
