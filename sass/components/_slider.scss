@@ -1,16 +1,5 @@
 .slider {
-    background: $background-color url("/images/slideroverlay.jpg") no-repeat center;
-    position: relative;
-    &:after {
-        content: "";
-        background: rgba(47, 48, 58, 0.4);
-        top: 0;
-        left: 0;
-    }
-    & > * {
-        position: relative;
-        z-index: 10;
-    }
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/slideroverlay.jpg) no-repeat center;
 }
 .main-header {
     height: 600px;
