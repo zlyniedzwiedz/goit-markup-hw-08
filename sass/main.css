@@ -71,7 +71,18 @@
 }
 
 .slider {
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/slideroverlay.jpg) no-repeat center;
+  background: #2f303a url("./images/slideroverlay.jpg") no-repeat center;
+  position: relative;
+}
+.slider:after {
+  content: "";
+  background: rgba(47, 48, 58, 0.4);
+  top: 0;
+  left: 0;
+}
+.slider > * {
+  position: relative;
+  z-index: 10;
 }
 
 .main-header {
