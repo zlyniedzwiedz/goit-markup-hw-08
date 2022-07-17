@@ -1,13 +1,9 @@
 .slider {
-    background: $background-color url(images/slideroverlay.jpg) no-repeat center;
+    background: $background-color url("../images/slideroverlay.jpg") no-repeat center;
     position: relative;
     &:after {
         content: "";
         background: rgba(47, 48, 58, 0.4);
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
         top: 0;
         left: 0;
     }
