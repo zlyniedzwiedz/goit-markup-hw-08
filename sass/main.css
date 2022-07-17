@@ -71,7 +71,7 @@
 }
 
 .slider {
-  background: #2f303a url("./images/slideroverlay.jpg") no-repeat center;
+  background: #2f303a url("/images/slideroverlay.jpg") no-repeat center;
   position: relative;
 }
 .slider:after {

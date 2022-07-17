@@ -1,5 +1,5 @@
 .slider {
-    background: $background-color url("./images/slideroverlay.jpg") no-repeat center;
+    background: $background-color url("/images/slideroverlay.jpg") no-repeat center;
     position: relative;
     &:after {
         content: "";
