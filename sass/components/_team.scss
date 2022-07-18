@@ -53,6 +53,7 @@
                     border-radius: 50%;
                     background: $accent-color;
                     fill: $alternative-text-color;
+                    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
                 }
             }
         }
