@@ -252,12 +252,11 @@
   width: 44px;
   height: 44px;
   gap: 10px;
+  border-radius: 50%;
 }
 .team-card-social-icon:hover, .team-card-social-icon:focus {
-  border-radius: 50%;
   background: #2196f3;
   fill: #ffffff;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .team-card img {
   height: 260px;
