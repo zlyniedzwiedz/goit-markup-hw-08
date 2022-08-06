@@ -2,7 +2,7 @@
     padding: 40px;
     label {
         position: relative;
-        
+
         &:focus,
         &:active,
         &:hover {
@@ -36,7 +36,6 @@
         border-radius: 4px;
         margin-top: 4px;
         margin-bottom: 10px;
-        padding: 0;
 
         &:focus,
         &:active,
@@ -78,7 +77,6 @@
 }
 
 #order-comment {
-    content: "Wprowadź tekst";
     width: 448px;
     height: 120px;
     text-indent: 0px;
@@ -88,7 +86,6 @@
 #order-checkbox {
     font-size: 14px;
     line-height: 1.71;
-
     z-index: 5;
 }
 .icon-checkbox-form {
