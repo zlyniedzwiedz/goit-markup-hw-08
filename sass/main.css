@@ -736,6 +736,14 @@
 .form-order-checkbox {
   margin: auto;
 }
+.form-order-checkbox-input {
+  font-size: 14px;
+  line-height: 1.71;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  z-index: 10;
+}
 
 #order-comment {
   width: 448px;
@@ -745,17 +753,9 @@
   margin-bottom: 20px;
 }
 
-#order-checkbox {
+#form-order-policies {
   font-size: 14px;
   line-height: 1.71;
-  z-index: 5;
-}
-
-.icon-checkbox-form {
-  z-index: 10;
-  fill: #212121;
-  height: 16px;
-  width: 16px;
 }
 
 body {
