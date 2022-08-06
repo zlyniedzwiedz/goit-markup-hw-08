@@ -422,6 +422,37 @@
         <div class="modal-container is-hidden" id="modal-container" data-modal>
             <div class="modal-background">
                 <div class="modal">
+                    <form name="form-order" autocomplete="off" class="form-order" novalidate>
+                        <h3 class="form-order-title">Zostaw swoje dane w formularzu poniżej</h3>
+                        <div class="form-order-container">
+                            <label>
+                                Imię
+                                <input class="form-order-input" id="order-name" type="text" name="name" placeholder="" />
+                            </label>
+                            <label>
+                                Telefon
+                                <input class="form-order-input" id="order-phone" type="tel" name="phone-number" />
+                            </label>
+                            <label>
+                                Email
+                                <input class="form-order-input" id="order-email" type="email" name="email" /> </label
+                            ><label>
+                                Komentarz
+                                <input class="form-order-input" id="order-comment" type="textarea" name="comment" placeholder="Wprowadź tekst" />
+                            </label>
+                            <label>
+                                <div class="form-order-checkbox">
+                                <input type="checkbox"  id="order-checkbox" name="checkbox" unchecked />
+                                <svg class="icon icon-checkbox-form" width="16" height="15" viewbox="0 0 32 32">
+                                    <use xlink:href="images/icons.svg#icon-checkbox-form"></use>
+                                </svg>
+                                Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
+                            </label>
+                        </div>
+                            <button type="submit" class="form-order-button" action="#">Wyślij</button>
+
+                        </div>
+                    </form>
                     <button type="button" id="cBtn" data-modal-close>X</button>
                 </div>
             </div>
