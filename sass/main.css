@@ -667,13 +667,16 @@
   }
 }
 .form-order {
-  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .form-order label {
   position: relative;
 }
 .form-order label:focus, .form-order label:active, .form-order label:hover {
+  border-color: #2196f3;
   fill: #2196f3;
+  outline: none;
 }
 .form-order label > span {
   font-size: 12px;
@@ -716,7 +719,7 @@
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
-  margin-top: 0;
+  margin-top: 40px;
 }
 .form-order-button {
   width: 200px;
@@ -732,6 +735,8 @@
   border-radius: 4px;
   border: none;
   margin-left: 124px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 .form-order-checkbox {
   position: relative;
@@ -774,6 +779,7 @@
 #form-order-policies {
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 20px;
 }
 
 body {
