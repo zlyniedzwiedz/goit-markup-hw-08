@@ -550,7 +550,7 @@
   position: absolute;
   top: 221px;
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: white;
   border-radius: 4px;
@@ -673,10 +673,9 @@
 .form-order label {
   position: relative;
 }
-.form-order label:focus, .form-order label:active, .form-order label:hover {
+.form-order label:hover, .form-order label:active, .form-order label:focus, .form-order label:focus-within {
   border-color: #2196f3;
   fill: #2196f3;
-  outline: none;
 }
 .form-order label > span {
   font-size: 12px;
@@ -685,7 +684,7 @@
   color: #757575;
 }
 .form-order .icon {
-  display: inline-block;
+  display: block;
 }
 .form-order label > .icon {
   position: absolute;
@@ -695,6 +694,7 @@
 .form-order-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
 }
 .form-order-input {
   width: 448px;
@@ -704,11 +704,11 @@
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 10px;
+  outline: none;
 }
-.form-order-input:focus, .form-order-input:active, .form-order-input:hover {
+.form-order-input:hover, .form-order-input:active, .form-order-input:focus {
   border-color: #2196f3;
   fill: #2196f3;
-  outline: none;
 }
 .form-order-title {
   font-family: "Roboto";
@@ -736,7 +736,6 @@
   border: none;
   margin-left: 124px;
   margin-top: 30px;
-  margin-bottom: 40px;
 }
 .form-order-checkbox {
   position: relative;
@@ -745,7 +744,7 @@
 .form-order-checkbox-input {
   position: absolute;
   top: 3px;
-  left: -18px;
+  left: -25px;
   width: 16px;
   height: 16px;
   opacity: 1;
@@ -773,13 +772,82 @@
   width: 16px;
   z-index: 5;
   top: 3px;
-  left: -18px;
+  left: -25px;
 }
 
 #form-order-policies {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 20px;
+}
+
+.form-newsletter {
+  padding-left: 70px;
+  padding-top: 70px;
+}
+.form-newsletter form {
+  position: relative;
+  display: inline-flex;
+  gap: 24px;
+}
+.form-newsletter-email {
+  width: 358px;
+  height: 50px;
+  padding-left: 22px;
+  background-color: #2f303a;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: transform 250ms ease-in, box-shadow 250ms ease-in;
+}
+.form-newsletter-email::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-newsletter-email:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-newsletter-email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-newsletter-email:focus {
+  outline: none;
+  border: 2px solid;
+  border-color: #2196f3;
+}
+.form-newsletter-header {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.form-newsletter-button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  font-family: "Roboto";
+  cursor: pointer;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+}
+
+.icon-send {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 0;
+  top: 15px;
+  margin-right: 28px;
 }
 
 body {
