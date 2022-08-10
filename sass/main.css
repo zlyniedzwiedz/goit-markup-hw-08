@@ -670,25 +670,23 @@
   padding-left: 40px;
   padding-right: 40px;
 }
-.form-order label {
+.form-order-label {
   position: relative;
 }
-.form-order label:hover, .form-order label:active, .form-order label:focus, .form-order label:focus-within {
+.form-order-label:hover, .form-order-label:active, .form-order-label:focus, .form-order-label:focus-within {
   border-color: #2196f3;
   fill: #2196f3;
 }
-.form-order label > span {
+.form-order-label > .label-title {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
 }
-.form-order .icon {
+.form-order-label > .input-icon {
   display: block;
-}
-.form-order label > .icon {
   position: absolute;
-  top: 50%;
+  top: 34px;
   left: 10px;
 }
 .form-order-container {

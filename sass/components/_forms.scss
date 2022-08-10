@@ -1,7 +1,7 @@
 .form-order {
     padding-left: 40px;
     padding-right: 40px;
-    label {
+    &-label {
         position: relative;
 
         &:hover,
@@ -12,18 +12,17 @@
             fill: $accent-color;
         }
     }
-    label > span {
+    &-label > .label-title {
         font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.01em;
         color: $contacts-header-color;
     }
-    .icon {
+    
+    &-label > .input-icon {
         display: block;
-    }
-    label > .icon {
         position: absolute;
-        top: 50%;
+        top: 34px;
         left: 10px;
     }
 
