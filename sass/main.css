@@ -684,6 +684,8 @@
   color: #757575;
 }
 .form-order-label > .input-icon {
+  width: 18px;
+  height: 18px;
   display: block;
   position: absolute;
   top: 34px;
