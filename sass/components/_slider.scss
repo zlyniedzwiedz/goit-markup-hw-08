@@ -4,12 +4,12 @@
 .main-header {
     height: 600px;
 
-    &-content {
+    &__content {
         text-align: center;
 
         z-index: 10;
     }
-    &-text {
+    &__text {
         font-family: "Roboto";
         width: 696px;
         font-weight: 900;
@@ -21,7 +21,7 @@
         color: $alternative-text-color;
         z-index: 10;
     }
-    &-button {
+    &__button {
         width: 200px;
         height: 50px;
         background-color: $accent-color;
