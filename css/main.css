@@ -201,6 +201,10 @@
   align-items: center;
   height: 100%;
 }
+.whatwedo__image {
+  width: 370;
+  height: 294;
+}
 
 .team {
   background: #f5f4fa;
