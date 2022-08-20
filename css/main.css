@@ -205,20 +205,11 @@
 .team {
   background: #f5f4fa;
 }
-.team-cards {
+.team__cards {
   display: flex;
   gap: 30px;
 }
-.team figure {
-  display: inline-block;
-  margin: 0;
-  border: none;
-}
-.team figure figcaption {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.team-title {
+.team__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
@@ -226,53 +217,64 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.team-card {
+
+.card {
   border: 1px solid #eeeeee;
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+  display: inline-block;
+  margin: 0;
+  border: none;
 }
-.team-card-social-list {
+.card__details {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.card__image {
+  height: 260px;
+  max-width: 100%;
+}
+.card__title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+  text-align: center;
+}
+.card__description {
+  font-size: 16px;
+  color: #757575;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+.social__link-row {
   margin: 0;
   padding: 0 32px;
   width: 100%;
-}
-.team-card-social-list-element {
+  gap: 10px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
-.team-card-social-icon {
+.social__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
   width: 44px;
   height: 44px;
-  gap: 10px;
   border-radius: 50%;
 }
-.team-card-social-icon:hover, .team-card-social-icon:focus {
+.social__link:hover, .social__link:focus {
   background: #2196f3;
   fill: #ffffff;
 }
-.team-card img {
-  height: 260px;
-  max-width: 100%;
-}
-.team-card-title {
-  font-weight: 500;
-  font-size: 16px;
-  color: #212121;
-  text-align: center;
-}
-.team-card-description {
-  font-size: 16px;
-  color: #757575;
-  text-align: center;
-  margin-top: 10px;
-  padding-bottom: 15px;
+.social__icon {
+  width: 20px;
+  height: 20px;
 }
 
 .footer {

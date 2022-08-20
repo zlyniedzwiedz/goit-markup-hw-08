@@ -1,19 +1,12 @@
 .team {
     background: $team-background-color;
-    &-cards {
+
+    &__cards {
         display: flex;
         gap: 30px;
     }
-    figure {
-        display: inline-block;
-        margin: 0;
-        border: none;
-        figcaption {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-    }
-    &-title {
+
+    &__title {
         font-family: "Roboto";
         font-weight: 700;
         font-size: 36px;
@@ -21,59 +14,76 @@
         text-align: center;
         margin-bottom: 50px;
     }
-    &-card {
-        border: 1px solid $figure-border-color;
-        width: 270px;
+}
 
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-        background-color: $body-background-color;
-        &-social {
-            &-list {
-                margin: 0;
-                padding: 0 32px;
-                width: 100%;
-                &-element {
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
+.card {
+    border: 1px solid $figure-border-color;
+    width: 270px;
 
-            &-icon {
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                fill: $icons-fill-color;
-                width: 44px;
-                height: 44px;
-                gap: 10px;
-                border-radius: 50%;
-                &:hover,
-                &:focus {
-                    background: $accent-color;
-                    fill: $alternative-text-color;
-                }
-            }
-        }
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $body-background-color;
+    display: inline-block;
+    margin: 0;
+    border: none;
 
-        img {
-            height: 260px;
-            max-width: 100%;
-        }
-        &-title {
-            font-weight: 500;
-            font-size: 16px;
+    &__details {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
-            color: $main-text-color;
-            text-align: center;
+    &__image {
+        height: 260px;
+        max-width: 100%;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+
+        color: $main-text-color;
+        text-align: center;
+    }
+
+    &__description {
+        font-size: 16px;
+        color: $contacts-header-color;
+        text-align: center;
+        margin-top: 10px;
+        padding-bottom: 15px;
+    }
+}
+
+
+.social {
+    &__link-row {
+        margin: 0;
+        padding: 0 32px;
+        width: 100%;
+        gap: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        fill: $icons-fill-color;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+
+        &:hover,
+        &:focus {
+            background: $accent-color;
+            fill: $alternative-text-color;
         }
-        &-description {
-            font-size: 16px;
-            color: $contacts-header-color;
-            text-align: center;
-            margin-top: 10px;
-            padding-bottom: 15px;
-        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
     }
 }

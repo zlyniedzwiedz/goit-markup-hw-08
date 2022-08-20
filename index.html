@@ -80,7 +80,7 @@
             <div class="container">
                 <ul class="features">
                     <li class="features__client">
-                        <svg class="icon features__icon">
+                        <svg class="features__icon">
                             <use xlink:href="images/icons.svg#icon-lorem1"></use>
                         </svg>
                         <h4 class="features__title">LOREM IPSUM</h4>
@@ -90,7 +90,7 @@
                     </li>
 
                     <li class="features__client">
-                        <svg class="icon features__icon">
+                        <svg class="features__icon">
                             <use xlink:href="images/icons.svg#icon-lorem2"></use>
                         </svg>
                         <h4 class="features__title">LOREM IPSUM</h4>
@@ -100,7 +100,7 @@
                     </li>
 
                     <li class="features__client">
-                        <svg class="icon features__icon">
+                        <svg class="features__icon">
                             <use xlink:href="images/icons.svg#icon-lorem3"></use>
                         </svg>
                         <h4 class="features__title">LOREM IPSUM</h4>
@@ -110,7 +110,7 @@
                     </li>
 
                     <li class="features__client">
-                        <svg class="icon features__icon">
+                        <svg class="features__icon">
                             <use xlink:href="images/icons.svg#icon-lorem4"></use>
                         </svg>
                         <h4 class="features__title">LOREM IPSUM</h4>
@@ -152,45 +152,41 @@
 
         <section class="team section">
             <div class="container">
-                <h2 class="team-title">Nasz zespół</h2>
+                <h2 class="team__title">Nasz zespół</h2>
 
-                <ul class="team-cards">
+                <ul class="team__cards">
                     <li>
-                        <figure class="team-card">
-                            <img src="images/img4.jpg" alt="John Doe in brown polo shirt" width="270" height="260" />
-                            <figcaption>
-                                <p class="team-card-title">John Doe</p>
-                                <p class="team-card-description">Product Designer</p>
-                                <div class="team-card-social">
-                                    <ul class="team-card-social-list">
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-instagram-2" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                        <figure class="card">
+                            <img class="card__image" src="images/img4.jpg" alt="John Doe in brown polo shirt" />
+                            <figcaption class="card__details">
+                                <p class="card__title">John Doe</p>
+                                <p class="card__description">Product Designer</p>
+                                <div class="social">
+                                    <ul class="social__link-row">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-instagram-2"></use>
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-twitter-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-twitter-1"></use>
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-facebook-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-facebook-1"></use>
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-linkedin-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-linkedin-1"></use>
                                                 </svg>
                                             </a>
@@ -201,42 +197,80 @@
                         </figure>
                     </li>
                     <li>
-                        <figure class="team-card">
-                            <img src="images/img5.jpg" alt="Jane Doe with glasses and graphite shirt" width="270"
+                        <figure class="card">
+                            <img class="card__image" src="images/img5.jpg"
+                                alt="Jane Doe with glasses and graphite shirt" width="270" height="260" />
+                            <figcaption class="card__details">
+                                <p class="card__title">Jane Doe</p>
+                                <p class="card__description">Frontend Developer</p>
+                                <div class="social">
+                                    <ul class="social__link-row">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
+                                                    <use xlink:href="images/icons.svg#icon-instagram-2"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
+                                                    <use xlink:href="images/icons.svg#icon-twitter-1"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
+                                                    <use xlink:href="images/icons.svg#icon-facebook-1"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
+                                                    <use xlink:href="images/icons.svg#icon-linkedin-1"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="card">
+                            <img class="card__image" src="images/img6.jpg" alt="Smiling John Doe" width="270"
                                 height="260" />
-                            <figcaption>
-                                <p class="team-card-title">Jane Doe</p>
-                                <p class="team-card-description">Frontend Developer</p>
-                                <div class="team-card-social">
-                                    <ul class="team-card-social-list">
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-instagram-2" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                            <figcaption class="card__details">
+                                <p class="card__title">John Doe</p>
+                                <p class="card__description">Marketing</p>
+                                <div class="social">
+                                    <ul class="social__link-row">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-instagram-2"></use>
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-twitter-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-twitter-1"></use>
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-facebook-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-facebook-1"></use>
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-linkedin-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-linkedin-1"></use>
                                                 </svg>
                                             </a>
@@ -247,86 +281,38 @@
                         </figure>
                     </li>
                     <li>
-                        <figure class="team-card">
-                            <img src="images/img6.jpg" alt="Smiling John Doe" width="270" height="260" />
-                            <figcaption>
-                                <p class="team-card-title">John Doe</p>
-                                <p class="team-card-description">Marketing</p>
-                                <div class="team-card-social">
-                                    <ul class="team-card-social-list">
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-instagram-2" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                        <figure class="card">
+                            <img class="card__image" src="images/img7.jpg" alt="John Doe in black t-shirt" width="270"
+                                height="260" />
+                            <figcaption class="card__details">
+                                <p class="card__title">John Doe</p>
+                                <p class="card__description">UI Designer</p>
+                                <div class="social">
+                                    <ul class="social__link-row">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-instagram-2"></use>
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-twitter-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-twitter-1"></use>
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-facebook-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-facebook-1"></use>
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-linkedin-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
-                                                    <use xlink:href="images/icons.svg#icon-linkedin-1"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="team-card">
-                            <img src="images/img7.jpg" alt="John Doe in black t-shirt" width="270" height="260" />
-                            <figcaption>
-                                <p class="team-card-title">John Doe</p>
-                                <p class="team-card-description">UI Designer</p>
-                                <div class="team-card-social">
-                                    <ul class="team-card-social-list">
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-instagram-2" width="20" height="20"
-                                                    viewbox="0 0 20 20">
-                                                    <use xlink:href="images/icons.svg#icon-instagram-2"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-twitter-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
-                                                    <use xlink:href="images/icons.svg#icon-twitter-1"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-facebook-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
-                                                    <use xlink:href="images/icons.svg#icon-facebook-1"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="team-card-social-list-element">
-                                            <a class="team-card-social-icon" href="#">
-                                                <svg class="icon icon-linkedin-1" width="20" height="20"
-                                                    viewbox="0 0 20 20">
+                                        <li>
+                                            <a class="social__link" href="#">
+                                                <svg class="social__icon">
                                                     <use xlink:href="images/icons.svg#icon-linkedin-1"></use>
                                                 </svg>
                                             </a>
