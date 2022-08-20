@@ -1,22 +1,30 @@
-.features-list {
+.features {
     display: flex;
     padding-top: 94px;
     width: 100%;
     gap: 30px;
-}
-.feature {
-    display: block;
 
-    &-title {
+    &__client {
+        display: block;
+    }
+
+    &__title {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         margin-bottom: 10px;
     }
-    &-content {
+
+    &__content {
         font-size: 14px;
         line-height: 1.71;
         color: $contacts-header-color;
         letter-spacing: 0.03em;
+    }
+
+    &__icon {
+        width: 270px;
+        height: 120px;
+
     }
 }

@@ -139,27 +139,30 @@
   z-index: 10;
 }
 
-.features-list {
+.features {
   display: flex;
   padding-top: 94px;
   width: 100%;
   gap: 30px;
 }
-
-.feature {
+.features__client {
   display: block;
 }
-.feature-title {
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
 }
-.feature-content {
+.features__content {
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
   letter-spacing: 0.03em;
+}
+.features__icon {
+  width: 270px;
+  height: 120px;
 }
 
 .whatwedo-title {
