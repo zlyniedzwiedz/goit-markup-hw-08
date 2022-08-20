@@ -504,7 +504,7 @@
   margin: 0;
 }
 
-.modal-container {
+.modal__container {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -512,20 +512,20 @@
   left: 0;
   z-index: 10;
 }
-.modal-container.in .modal-background {
+.modal__container.in .modal__background {
   background: rgba(0, 0, 0, 0);
   animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-.modal-container.in .modal-background .modal {
+.modal__container.in .modal__background .modal {
   animation: slideIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-.modal-container.out {
+.modal__container.out {
   animation: quickScaleDown 0s 0.5s linear forwards;
 }
-.modal-container.out .modal-background {
+.modal__container.out .modal__background {
   animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-.modal-container.out .modal-background .modal {
+.modal__container.out .modal__background .modal {
   animation: slideOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
@@ -533,7 +533,7 @@
   display: none;
 }
 
-.modal-background {
+.modal__background {
   position: fixed;
   left: 0;
   top: 0;
@@ -545,7 +545,7 @@
   z-index: 12;
   background: rgba(0, 0, 0, 0.3);
 }
-.modal-background .modal {
+.modal__background .modal {
   position: absolute;
   top: 221px;
   width: 528px;
@@ -554,7 +554,7 @@
   background-color: white;
   border-radius: 4px;
 }
-.modal-background .modal button[type=button] {
+.modal__background .modal button[type=button] {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -615,24 +615,28 @@
     transform: translateX(1500px) scaleX(1) rotate(360deg);
   }
 }
-.form-order {
+.order {
   padding-left: 40px;
   padding-right: 40px;
 }
-.form-order-label {
+.order__icon {
+  width: 18px;
+  height: 18px;
+}
+.order__label {
   position: relative;
 }
-.form-order-label:hover, .form-order-label:active, .form-order-label:focus, .form-order-label:focus-within {
+.order__label:hover, .order__label:active, .order__label:focus, .order__label:focus-within {
   border-color: #2196f3;
   fill: #2196f3;
 }
-.form-order-label > .label-title {
+.order__label > .label__title {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
 }
-.form-order-label > .input-icon {
+.order__label > .input__icon {
   width: 18px;
   height: 18px;
   display: block;
@@ -640,12 +644,12 @@
   top: 34px;
   left: 10px;
 }
-.form-order-container {
+.order__container {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
 }
-.form-order-input {
+.order__input {
   width: 448px;
   height: 40px;
   text-indent: 42px;
@@ -655,11 +659,11 @@
   margin-bottom: 10px;
   outline: none;
 }
-.form-order-input:hover, .form-order-input:active, .form-order-input:focus {
+.order__input:hover, .order__input:active, .order__input:focus {
   border-color: #2196f3;
   fill: #2196f3;
 }
-.form-order-title {
+.order__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
@@ -670,7 +674,7 @@
   margin-bottom: 12px;
   margin-top: 40px;
 }
-.form-order-button {
+.order__button {
   width: 200px;
   height: 50px;
   background-color: #2196f3;
@@ -686,11 +690,11 @@
   margin-left: 124px;
   margin-top: 30px;
 }
-.form-order-checkbox {
+.order .checkbox {
   position: relative;
   margin: auto;
 }
-.form-order-checkbox-input {
+.order .checkbox__input {
   position: absolute;
   top: 3px;
   left: -25px;
@@ -701,7 +705,7 @@
   z-index: 1;
 }
 
-#order-comment {
+#order__comment {
   width: 448px;
   height: 120px;
   text-indent: 0px;
@@ -709,11 +713,11 @@
   margin-bottom: 20px;
 }
 
-.form-order-checkbox input:checked ~ .icon-check {
+.order__checkbox input:checked ~ .icon-check {
   display: block;
 }
 
-.icon-check {
+.check-icon {
   display: none;
   position: absolute;
   z-index: 10;
@@ -724,7 +728,7 @@
   left: -25px;
 }
 
-#form-order-policies {
+#order__policies {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 20px;

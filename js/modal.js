@@ -9,7 +9,7 @@
     refs.closeModalBtn.addEventListener("click", SlideOut);
 
     function SlideIn() {
-        refs.modal.className = "modal-container in";
+        refs.modal.className = "modal__container in";
     }
 
     function SlideOut() {

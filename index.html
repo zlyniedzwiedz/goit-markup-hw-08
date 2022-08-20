@@ -402,28 +402,28 @@
                     <ul class="social__links">
                         <li>
                             <a class="social__link" href="#">
-                                <svg class="social__icon" >
+                                <svg class="social__icon">
                                     <use xlink:href="images/icons.svg#icon-instagram-2"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a class="social__link" href="#">
-                                <svg class="social__icon" >
+                                <svg class="social__icon">
                                     <use xlink:href="images/icons.svg#icon-twitter-1"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a class="social__link" href="#">
-                                <svg class="social__icon" >
+                                <svg class="social__icon">
                                     <use xlink:href="images/icons.svg#icon-facebook-1"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a class="social__link" href="#">
-                                <svg class="social__icon" >
+                                <svg class="social__icon">
                                     <use xlink:href="images/icons.svg#icon-linkedin-1"></use>
                                 </svg>
                             </a>
@@ -436,7 +436,8 @@
                         <input class="newsletter__email" type="email" name="newsletter-email" placeholder="E-mail"
                             required />
                         <input class="newsletter__button" type="submit" name="newsletter-sumbit"
-                            value="Zapisz się" /><svg class="newsletter__icon" width="24" height="24" viewbox="0 0 24 24">
+                            value="Zapisz się" /><svg class="newsletter__icon" width="24" height="24"
+                            viewbox="0 0 24 24">
                             <use xlink:href="images/icons.svg#icon-send"></use>
                         </svg>
                     </form>
@@ -445,49 +446,48 @@
         </div>
     </footer>
 
-    <div class="modal-container is-hidden" id="modal-container" data-modal>
-        <div class="modal-background">
+    <div class="modal__container is-hidden" id="modal__container" data-modal>
+        <div class="modal__background">
             <div class="modal">
-                <form name="form-order" autocomplete="off" class="form-order" validate>
-                    <div class="form-order-container">
-                        <h3 class="form-order-title">Zostaw swoje dane w formularzu poniżej</h3>
-                        <label for="form-order-input" class="form-order-label">
-                            <span class="label-title">Imię</span>
-                            <svg class="input-icon icon-phone-black-form" viewbox="0 0 32 32">
+                <form name="order" autocomplete="off" class="order" validate>
+                    <div class="order__container">
+                        <h3 class="order__title">Zostaw swoje dane w formularzu poniżej</h3>
+                        <label for="order__input" class="order__label">
+                            <span class="label__title">Imię</span>
+                            <svg class="input__icon">
                                 <use xlink:href="images/icons.svg#icon-person-black-form"></use>
                             </svg>
-                            <input class="form-order-input" id="order-name" type="text" name="name" required />
+                            <input class="order__input" id="order__name" type="text" name="name" required />
                         </label>
-                        <label for="form-order-input" class="form-order-label">
-                            <span class="label-title">Telefon</span>
-                            <svg class="input-icon icon-person-black-form" viewbox="0 0 32 32">
+                        <label for="order__input" class="order__label">
+                            <span class="label__title">Telefon</span>
+                            <svg class="input__icon ">
                                 <use xlink:href="images/icons.svg#icon-phone-black-form"></use>
                             </svg>
-                            <input class="form-order-input" id="order-phone" type="tel" name="phone-number" />
+                            <input class="order__input" id="order__phone" type="tel" name="phone-number" />
                         </label>
-                        <label for="form-order-input" class="form-order-label">
-                            <span class="label-title">Email</span>
-                            <svg class="input-icon icon-email-black-form" viewbox="0 0 32 32">
+                        <label for="order__input" class="order__label">
+                            <span class="label__title">Email</span>
+                            <svg class="input__icon ">
                                 <use xlink:href="images/icons.svg#icon-email-black-form"></use>
                             </svg>
-                            <input class="form-order-input" id="order-email" type="email" name="email" required />
-                        </label><label for="form-order-input" class="form-order-label">
-                            <span class="label-title">Komentarz</span>
-                            <textarea class="form-order-input" id="order-comment" type="textarea" name="comment"
+                            <input class="order__input" id="order__email" type="email" name="email" required />
+                        </label><label for="order__input" class="order__label">
+                            <span class="label__title">Komentarz</span>
+                            <textarea class="order__input" id="order__comment" type="textarea" name="comment"
                                 placeholder="Wprowadź tekst"> </textarea>
                         </label>
 
-                        <label class="form-order-checkbox">
-                            <input type="checkbox" class="form-order-checkbox-input" name="checkbox" unchecked
-                                required />
-                            <svg class="icon-check" width="16" height="15" viewbox="0 0 32 32">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="checkbox" unchecked required />
+                            <svg class="check-icon">
                                 <use xlink:href="images/icons.svg#icon-check"></use>
                             </svg>
-                            <span id="form-order-policies">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a
+                            <span id="order__policies">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a
                                     href="#">Politykę Prywatności.</a></span>
                         </label>
 
-                        <button type="submit" class="form-order-button">Wyślij</button>
+                        <button type="submit" class="order__button">Wyślij</button>
                     </div>
                 </form>
                 <button type="button" id="cBtn" data-modal-close>X</button>

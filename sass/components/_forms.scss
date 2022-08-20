@@ -1,8 +1,11 @@
-.form-order {
+.order {
     padding-left: 40px;
     padding-right: 40px;
-
-    &-label {
+    &__icon {
+        width: 18px;
+        height: 18px;
+    }
+    &__label {
         position: relative;
 
         &:hover,
@@ -14,14 +17,14 @@
         }
     }
 
-    &-label>.label-title {
+    &__label>.label__title {
         font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.01em;
         color: $contacts-header-color;
     }
 
-    &-label>.input-icon {
+    &__label>.input__icon {
         width: 18px;
         height: 18px;
         display: block;
@@ -30,13 +33,13 @@
         left: 10px;
     }
 
-    &-container {
+    &__container {
         display: flex;
         flex-direction: column;
         padding-bottom: 40px;
     }
 
-    &-input {
+    &__input {
         width: 448px;
         height: 40px;
         text-indent: 42px;
@@ -55,7 +58,7 @@
         }
     }
 
-    &-title {
+    &__title {
         font-family: "Roboto";
         font-weight: 700;
         font-size: 20px;
@@ -67,7 +70,7 @@
         margin-top: 40px;
     }
 
-    &-button {
+    &__button {
         width: 200px;
         height: 50px;
         background-color: $accent-color;
@@ -84,11 +87,11 @@
         margin-top: 30px;
     }
 
-    &-checkbox {
+    .checkbox {
         position: relative;
         margin: auto;
 
-        &-input {
+        &__input {
             position: absolute;
             top: 3px;
             left: -25px;
@@ -101,7 +104,7 @@
     }
 }
 
-#order-comment {
+#order__comment {
     width: 448px;
     height: 120px;
     text-indent: 0px;
@@ -109,11 +112,11 @@
     margin-bottom: 20px;
 }
 
-.form-order-checkbox input:checked~.icon-check {
+.order__checkbox input:checked~.icon-check {
     display: block;
 }
 
-.icon-check {
+.check-icon {
     display: none;
     position: absolute;
     z-index: 10;
@@ -124,7 +127,7 @@
     left: -25px;
 }
 
-#form-order-policies {
+#order__policies {
     font-size: 14px;
     line-height: 1.71;
     margin-top: 20px;

@@ -208,15 +208,15 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-left">
-                <div class="footer-content">
-                    <a href="index.html">
-                        <h2 class="footer-header"><span class="name-accent">Web</span>Studio</h2>
+            <div class="footer__left">
+                <div class="footer__content">
+                    <a class="footer__logo" href="index.html">
+                        <h2 class="footer__header"><span class="name-accent">Web</span>Studio</h2>
                     </a>
 
-                    <address>
+                    <address class="footer__address">
                         m. Warszawa, Aleje Jerozolimskie 21
-                        <div class="contact-links">
+                        <div class="footer__links">
                             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
 
                             <a href="tel:+48111111111">+48 111 111 111</a>
@@ -224,46 +224,47 @@
                     </address>
                 </div>
 
-                <div class="footer-social">
-                    <h4 class="footer-social-title">Dołącz do nas</h4>
-                    <ul class="footer-social-list">
-                        <li class="footer-social-list-element">
-                            <a class="footer-social-icon" href="#">
-                                <svg class="icon icon-instagram-2" width="20" height="20" viewbox="0 0 20 20">
+                <div class="social">
+                    <h4 class="social__title">Dołącz do nas</h4>
+                    <ul class="social__links">
+                        <li>
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
                                     <use xlink:href="images/icons.svg#icon-instagram-2"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-social-list-element">
-                            <a class="footer-social-icon" href="#">
-                                <svg class="icon icon-twitter-1" width="20" height="20" viewbox="0 0 20 20">
+                        <li>
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
                                     <use xlink:href="images/icons.svg#icon-twitter-1"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-social-list-element">
-                            <a class="footer-social-icon" href="#">
-                                <svg class="icon icon-facebook-1" width="20" height="20" viewbox="0 0 20 20">
+                        <li>
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
                                     <use xlink:href="images/icons.svg#icon-facebook-1"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-social-list-element">
-                            <a class="footer-social-icon" href="#">
-                                <svg class="icon icon-linkedin-1" width="20" height="20" viewbox="0 0 20 20">
+                        <li>
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
                                     <use xlink:href="images/icons.svg#icon-linkedin-1"></use>
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="form-newsletter">
-                    <p class="form-newsletter-header">Zapisz się do newslettera</p>
-                    <form name="newsletter" autocomplete="on">
-                        <input class="form-newsletter-email" type="email" name="newsletter-email" placeholder="E-mail"
+                <div class="newsletter">
+                    <p class="newsletter__header">Zapisz się do newslettera</p>
+                    <form class="newsletter__form" name="newsletter" autocomplete="on">
+                        <input class="newsletter__email" type="email" name="newsletter-email" placeholder="E-mail"
                             required />
-                        <input class="form-newsletter-button" type="submit" name="newsletter-sumbit"
-                            value="Zapisz się" /><svg class="icon-send" width="24" height="24" viewbox="0 0 24 24">
+                        <input class="newsletter__button" type="submit" name="newsletter-sumbit"
+                            value="Zapisz się" /><svg class="newsletter__icon" width="24" height="24"
+                            viewbox="0 0 24 24">
                             <use xlink:href="images/icons.svg#icon-send"></use>
                         </svg>
                     </form>
