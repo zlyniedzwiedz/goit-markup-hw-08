@@ -1,19 +1,52 @@
 .product {
-    &-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__gallery {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    &__title {
         font-weight: 700;
         font-size: 18px;
         color: $main-text-color;
         padding-top: 20px;
         line-height: 2;
     }
-    &-description {
+
+    &__description {
         font-size: 16px;
         padding-top: 4px;
         color: $contacts-header-color;
         padding-bottom: 20px;
         line-height: 1.87;
     }
-    &-card {
+
+    &__details {
+        position: relative;
+        border-bottom: 1px solid $figure-border-color;
+        border-left: 1px solid $figure-border-color;
+        border-right: 1px solid $figure-border-color;
+        height: 110px;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        margin: 0;
+        padding-left: 24px;
+        background-color: $body-background-color;
+        transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    }
+
+    &__image {
+        width: 370px;
+        height: 294px;
+        display: block;
+    }
+
+    &__card {
         position: relative;
         width: 370px;
         height: 404px;
@@ -21,24 +54,30 @@
         border: none;
         margin: 15px 15px;
         overflow: hidden;
+        margin: 0;
+
         &:focus,
         &:hover,
-        &:hover .overlay {
+        &:hover .product__overlay {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
             transform: translatex(0);
             transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
         }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: $portfolio-photo-overlay;
-            transform: translatey(100%);
-            transition: transform 250ms ease;
-        }
-        .overlay > p {
+
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $portfolio-photo-overlay;
+        transform: translatey(100%);
+        transition: transform 250ms ease;
+
+
+        &>p {
             color: $alternative-text-color;
             font-size: 18px;
             line-height: 1.56;
@@ -47,38 +86,6 @@
             padding-left: 24px;
         }
 
-        figcaption {
-            position: relative;
-            border-bottom: 1px solid $figure-border-color;
-            border-left: 1px solid $figure-border-color;
-            border-right: 1px solid $figure-border-color;
-            height: 110px;
-            padding: 0;
-            margin: 0;
-            overflow: hidden;
-            margin: 0;
-            padding-left: 24px;
-            background-color: $body-background-color;
-            transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-        }
 
-        img {
-            width: 370px;
-            height: 294px;
-            display: block;
-        }
-    }
-}
-.portfolio-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    ul {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-    }
-    figure {
-        margin: 0;
     }
 }
