@@ -730,16 +730,16 @@
   margin-top: 20px;
 }
 
-.form-newsletter {
+.newsletter {
   padding-left: 70px;
   padding-top: 70px;
 }
-.form-newsletter form {
+.newsletter__form {
   position: relative;
   display: inline-flex;
   gap: 24px;
 }
-.form-newsletter-email {
+.newsletter__email {
   width: 358px;
   height: 50px;
   padding-left: 22px;
@@ -750,15 +750,15 @@
   border-radius: 4px;
   transition: transform 250ms ease-in, box-shadow 250ms ease-in;
 }
-.form-newsletter-email::placeholder {
+.newsletter__email::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-.form-newsletter-email:focus {
+.newsletter__email:focus {
   outline: none;
   border: 2px solid;
   border-color: #2196f3;
 }
-.form-newsletter-header {
+.newsletter__header {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -766,7 +766,7 @@
   color: #ffffff;
   padding-bottom: 20px;
 }
-.form-newsletter-button {
+.newsletter__button {
   display: flex;
   width: 200px;
   height: 50px;
@@ -783,8 +783,7 @@
   border: none;
   padding: 0;
 }
-
-.icon-send {
+.newsletter__icon {
   position: absolute;
   width: 24px;
   height: 24px;

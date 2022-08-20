@@ -1,6 +1,7 @@
 .form-order {
     padding-left: 40px;
     padding-right: 40px;
+
     &-label {
         position: relative;
 
@@ -12,14 +13,15 @@
             fill: $accent-color;
         }
     }
-    &-label > .label-title {
+
+    &-label>.label-title {
         font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.01em;
         color: $contacts-header-color;
     }
-    
-    &-label > .input-icon {
+
+    &-label>.input-icon {
         width: 18px;
         height: 18px;
         display: block;
@@ -33,6 +35,7 @@
         flex-direction: column;
         padding-bottom: 40px;
     }
+
     &-input {
         width: 448px;
         height: 40px;
@@ -42,6 +45,7 @@
         margin-top: 4px;
         margin-bottom: 10px;
         outline: none;
+
         &:hover,
         &:active,
         &:focus {
@@ -50,6 +54,7 @@
             fill: $accent-color;
         }
     }
+
     &-title {
         font-family: "Roboto";
         font-weight: 700;
@@ -61,6 +66,7 @@
         margin-bottom: 12px;
         margin-top: 40px;
     }
+
     &-button {
         width: 200px;
         height: 50px;
@@ -77,9 +83,11 @@
         margin-left: 124px;
         margin-top: 30px;
     }
+
     &-checkbox {
         position: relative;
         margin: auto;
+
         &-input {
             position: absolute;
             top: 3px;
@@ -100,7 +108,8 @@
     resize: none;
     margin-bottom: 20px;
 }
-.form-order-checkbox input:checked ~ .icon-check {
+
+.form-order-checkbox input:checked~.icon-check {
     display: block;
 }
 
@@ -114,6 +123,7 @@
     top: 3px;
     left: -25px;
 }
+
 #form-order-policies {
     font-size: 14px;
     line-height: 1.71;
@@ -122,15 +132,18 @@
 
 // Footer Newsletter form
 
-.form-newsletter {
+.newsletter {
     padding-left: 70px;
     padding-top: 70px;
-    form {
+
+
+    &__form {
         position: relative;
         display: inline-flex;
         gap: 24px;
     }
-    &-email {
+
+    &__email {
         width: 358px;
         height: 50px;
         padding-left: 22px;
@@ -140,6 +153,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         transition: transform 250ms ease-in, box-shadow 250ms ease-in;
+
         &::placeholder {
             color: $contacts-color;
         }
@@ -150,7 +164,8 @@
             border-color: $accent-color;
         }
     }
-    &-header {
+
+    &__header {
         font-weight: 700;
         line-height: 1.14;
         letter-spacing: 0.03em;
@@ -158,7 +173,8 @@
         color: $alternative-text-color;
         padding-bottom: 20px;
     }
-    &-button {
+
+    &__button {
         display: flex;
         width: 200px;
         height: 50px;
@@ -175,14 +191,16 @@
         border: none;
         padding: 0;
     }
-}
-.icon-send {
-    position: absolute;
-    width: 24px;
-    height: 24px;
 
-    right: 0;
-    top: 15px;
-    margin-right: 28px;
-   
+
+    &__icon {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+
+        right: 0;
+        top: 15px;
+        margin-right: 28px;
+
+    }
 }
