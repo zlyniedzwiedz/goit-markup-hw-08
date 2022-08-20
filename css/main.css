@@ -376,7 +376,7 @@
   display: flex;
   gap: 30px;
 }
-.clients__icon {
+.clients__link {
   width: 170px;
   height: 92px;
   display: inline-flex;
@@ -386,7 +386,7 @@
   border-radius: 4px;
   border: 1px solid #afb1b8;
 }
-.clients__icon:hover, .clients__icon:focus {
+.clients__link:hover, .clients__link:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
