@@ -165,7 +165,7 @@
   height: 120px;
 }
 
-.whatwedo-title {
+.whatwedo__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
@@ -174,25 +174,16 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.whatwedo ul {
-  display: flex;
-  gap: 30px;
-}
-
-.whatwedo-list {
-  display: inline-block;
+.whatwedo__list {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
-.whatwedo-list-item {
+.whatwedo__item {
   position: relative;
   display: inline-block;
 }
-.whatwedo-list-item img {
-  display: block;
-}
-
-.label {
+.whatwedo__label {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -202,7 +193,7 @@
   background: rgba(47, 48, 58, 0.8);
   color: #fff;
 }
-.label p {
+.whatwedo__description {
   margin: 0;
   padding: 0;
   display: flex;
