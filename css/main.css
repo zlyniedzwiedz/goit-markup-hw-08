@@ -241,6 +241,11 @@
   height: 294;
 }
 
+@media only screen and (max-width: 1199px) {
+  .whatwedo {
+    display: none;
+  }
+}
 .team {
   background: #f5f4fa;
 }

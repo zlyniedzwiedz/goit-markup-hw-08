@@ -42,8 +42,15 @@
         align-items: center;
         height: 100%;
     }
+
     &__image {
         width: 370;
         height: 294;
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    .whatwedo {
+        display: none;
     }
 }
