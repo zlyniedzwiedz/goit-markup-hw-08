@@ -142,8 +142,15 @@
 .features {
   display: flex;
   padding-top: 94px;
-  width: 100%;
   gap: 30px;
+}
+.features__background {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px;
+  background-color: #F5F4FA;
 }
 .features__client {
   display: block;
@@ -160,11 +167,39 @@
   color: #757575;
   letter-spacing: 0.03em;
 }
-.features__icon {
-  width: 270px;
-  height: 120px;
+@media only screen and (max-width: 767px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .features__background {
+    height: 120px;
+    display: flex;
+    padding: 25px 100px;
+  }
+  .features__icon {
+    display: flex;
+    justify-content: center;
+  }
 }
-
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 60px;
+  }
+  .features__client {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .features__background {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 100;
+  }
+}
 .whatwedo__title {
   font-family: "Roboto";
   font-weight: 700;
@@ -814,7 +849,7 @@ p {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;

@@ -1,8 +1,17 @@
 .features {
     display: flex;
     padding-top: 94px;
-    width: 100%;
+
     gap: 30px;
+
+    &__background {
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 100px;
+        background-color: $icon-background;
+    }
 
     &__client {
         display: block;
@@ -22,9 +31,56 @@
         letter-spacing: 0.03em;
     }
 
-    &__icon {
-        width: 270px;
-        height: 120px;
+    &__icon {}
+}
+
+@media only screen and (max-width:767px) {
+    .features {
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+
+
+        &__background {
+            height: 120px;
+            display: flex;
+            
+            padding: 25px 100px;
+
+
+        }
+
+        &__icon {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+    .features {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        padding-top: 60px;
+
+        &__client {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+
+        &__background {
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            padding: 25px 100;
+
+
+        }
+
 
     }
 }
