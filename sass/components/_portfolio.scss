@@ -1,7 +1,7 @@
 .product {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+
 
     &__gallery {
         display: flex;
@@ -30,11 +30,11 @@
         border-bottom: 1px solid $figure-border-color;
         border-left: 1px solid $figure-border-color;
         border-right: 1px solid $figure-border-color;
-        height: 110px;
+
         padding: 0;
-        margin: 0;
+
         overflow: hidden;
-        margin: 0;
+
         padding-left: 24px;
         background-color: $body-background-color;
         transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -48,11 +48,10 @@
 
     &__card {
         position: relative;
-        width: 370px;
-        height: 404px;
+        width: 100%;
+
         background: $body-background-color;
         border: none;
-        margin: 15px 15px;
         overflow: hidden;
         margin: 0;
 
@@ -87,5 +86,58 @@
         }
 
 
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .product {
+        &__gallery {
+            display: flex;
+
+            width: 100%;
+            height: auto;
+            gap: 30px;
+
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__image {
+            min-width: 100%;
+            height: auto;
+        }
+
+        &__card {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+    .product {
+        &__gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+
+        &__image {
+            width: 100%;
+            height: 100%;
+        }
+
+        &__item {
+
+            flex-basis: calc((100% - 30px) / 2);
+        }
+
+        &__card {
+            width: 100%;
+        }
     }
 }
