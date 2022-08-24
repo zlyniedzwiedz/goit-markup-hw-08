@@ -466,12 +466,27 @@
     flex-direction: column;
     justify-content: center;
   }
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .footer__left {
     justify-content: center;
   }
   .footer__right {
     display: flex;
     justify-content: center;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .clients__title {
