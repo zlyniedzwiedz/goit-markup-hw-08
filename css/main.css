@@ -1098,7 +1098,7 @@
     align-items: center;
   }
   .newsletter__email {
-    min-width: 450px;
+    max-width: 450px;
   }
   .newsletter__icon {
     right: 120px;
