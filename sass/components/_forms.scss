@@ -38,7 +38,7 @@
     &__container {
         display: flex;
         flex-direction: column;
- }
+    }
 
     &__input {
         width: 448px;
@@ -187,7 +187,7 @@
         background-color: $accent-color;
         font-family: "Roboto";
         cursor: pointer;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         font-weight: 700;
         font-size: 16px;
@@ -200,13 +200,9 @@
 
 
     &__icon {
-        position: absolute;
         width: 24px;
         height: 24px;
-
-        right: 0;
-        top: 15px;
-        margin-right: 28px;
+        margin-left:24px;
 
     }
 }
@@ -220,6 +216,7 @@
         justify-content: center;
         align-items: center;
 
+
         &__form {
             display: flex;
             flex-direction: column;
@@ -229,11 +226,11 @@
         }
 
         &__email {
-            min-width: 450px;
+            max-width: 450px;
         }
 
         &__icon {
-            right: 120px;
+            right: 80px;
             top: 90px;
         }
     }
@@ -268,22 +265,24 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 100%;
+
 
         &__form {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            max-width: 100%;
         }
 
         &__email {
-            max-width: 450px;
-            margin: 0 15px;
+            max-width: 100%;
+
         }
 
         &__icon {
-            right: 80px;
+            right: 60px;
             top: 90px;
         }
     }

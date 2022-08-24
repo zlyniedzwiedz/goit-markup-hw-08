@@ -133,7 +133,7 @@
 }
 .main-header__text {
   font-family: "Roboto";
-  width: 696px;
+  width: 100%;
   font-weight: 900;
   font-size: 44px;
   margin: 0;
@@ -558,6 +558,7 @@
   .footer__right {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   .social {
     margin-left: 0;
@@ -1057,7 +1058,7 @@
   background-color: #2196f3;
   font-family: "Roboto";
   cursor: pointer;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-weight: 700;
   font-size: 16px;
@@ -1068,12 +1069,9 @@
   padding: 0;
 }
 .newsletter__icon {
-  position: absolute;
   width: 24px;
   height: 24px;
-  right: 0;
-  top: 15px;
-  margin-right: 28px;
+  margin-left: 24px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1092,10 +1090,10 @@
     align-items: center;
   }
   .newsletter__email {
-    min-width: 450px;
+    max-width: 450px;
   }
   .newsletter__icon {
-    right: 120px;
+    right: 80px;
     top: 90px;
   }
   .order__input {
@@ -1121,19 +1119,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
   }
   .newsletter__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
   }
   .newsletter__email {
-    max-width: 450px;
-    margin: 0 15px;
+    max-width: 100%;
   }
   .newsletter__icon {
-    right: 80px;
+    right: 60px;
     top: 90px;
   }
   .order__input {
