@@ -99,6 +99,22 @@
   font-size: 26px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact {
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+  .left-group__menu {
+    display: none;
+  }
+}
 .slider {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/slideroverlay.jpg) no-repeat center;
 }
