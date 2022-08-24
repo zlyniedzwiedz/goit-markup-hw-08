@@ -27,6 +27,7 @@
         color: $black-text-color;
         margin-right: 93px;
         font-size: 26px;
+        line-height: 1.19;
         margin-top: 24px;
     }
 
@@ -117,7 +118,14 @@
     color: $accent-color;
     font-weight: 700;
     font-size: 26px;
+    list-style: 1.19;
 }
+
+
+
+
+
+
 
 @media only screen and (min-width:768px) and (max-width:1199px) {
     .contact {
@@ -125,15 +133,47 @@
         padding: 0;
         gap: 10px;
         align-items: flex-start;
-        
+
+    }
+
+    .left-group {
+
+        &__name {
+            font-size: 24px;
+            line-height: 1.16;
+        }
+    }
+
+    .name-accent {
+        font-size: 24px;
+        line-height: 1.16;
     }
 }
 
+
 @media only screen and (max-width:767px) {
+
+
+
     .contact {
         display: none;
     }
-    .left-group__menu {
-        display: none;
+
+    .left-group {
+        justify-content: space-between;
+
+        &__name {
+            font-size: 24px;
+            line-height: 1.16;
+        }
+
+        &__menu {
+            display: none;
+        }
+    }
+
+    .name-accent {
+        font-size: 24px;
+        line-height: 1.16;
     }
 }

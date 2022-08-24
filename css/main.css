@@ -22,6 +22,7 @@
   color: #000000;
   margin-right: 93px;
   font-size: 26px;
+  line-height: 1.19;
   margin-top: 24px;
 }
 .left-group__menu {
@@ -97,6 +98,7 @@
   color: #2196f3;
   font-weight: 700;
   font-size: 26px;
+  list-style: 1.19;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -106,13 +108,32 @@
     gap: 10px;
     align-items: flex-start;
   }
+  .left-group__name {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  .name-accent {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 @media only screen and (max-width: 767px) {
   .contact {
     display: none;
   }
+  .left-group {
+    justify-content: space-between;
+  }
+  .left-group__name {
+    font-size: 24px;
+    line-height: 1.16;
+  }
   .left-group__menu {
     display: none;
+  }
+  .name-accent {
+    font-size: 24px;
+    line-height: 1.16;
   }
 }
 .slider {
@@ -462,10 +483,10 @@
   font-size: 14px;
 }
 
-.social {
+.social-footer {
   margin-left: 70px;
 }
-.social__title {
+.social-footer__title {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
@@ -477,7 +498,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.social__links {
+.social-footer__links {
   display: inline-flex;
   list-style: none;
   margin: 0;
@@ -485,7 +506,7 @@
   gap: 10px;
   width: 100%;
 }
-.social__link {
+.social-footer__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -495,12 +516,12 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.social__link:hover, .social__link:focus {
+.social-footer__link:hover, .social-footer__link:focus {
   border-radius: 50%;
   background: #2196f3;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.social__icon {
+.social-footer__icon {
   width: 20px;
   height: 20px;
 }
@@ -527,7 +548,7 @@
     display: flex;
     justify-content: center;
   }
-  .social {
+  .social-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -560,13 +581,13 @@
     justify-content: center;
     width: 100%;
   }
-  .social {
+  .social-footer {
     margin-left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .social__links {
+  .social-footer__links {
     justify-content: center;
   }
 }
@@ -1150,6 +1171,109 @@
     max-width: 370px;
   }
 }
+.navbutton-mobile {
+  display: none;
+  margin-top: 0.4rem;
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  transform: translatey(40px) translateX(5vw);
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
