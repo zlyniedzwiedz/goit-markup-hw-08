@@ -26,14 +26,18 @@
                         </a>
                         <nav>
                             <ul class="left-group__menu">
-                                <li><a class="left-group__link" href="index.html">Agencja</a></li>
+                                <li class="active"><a class="left-group__link" href="index.html">Agencja</a></li>
 
-                                <li class="active"><a class="left-group__link" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="left-group__link" href="portfolio.html">Portfolio</a></li>
 
                                 <li><a class="left-group__link" href="#">Kontakt</a></li>
                             </ul>
                         </nav>
                     </div>
+
+
+
+
 
                     <ul class="contact">
                         <li>
@@ -54,11 +58,65 @@
                             </a>
                         </li>
                     </ul>
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div class="menu-container js-menu-container" id="mobile-menu">
+                        <button class="menu-toggle js-close-menu">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <div class="mobile-nav">
+                            <div class="mobile-nav__upper">
+                                <ul class="mobile-nav__list">
+                                    <li class="mobile-nav__item"><a class="mobile-nav__link"
+                                            href="index.html">Agencja</a>
+                                    </li>
+                                    <li class="mobile-nav__item"><a class="mobile-nav__link"
+                                            href="portfolio.html">Portfolio</a></li>
+                                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Kontakt</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mobile-nav__lower">
+                                <a href="tel:+48111111111" class="mobile-contact__phone">
+                                    +48 111 111 111
+                                </a>
+                                <a href="mailto:info@devstudio.com" class="mobile-contact__email">
+                                    info@devstudio.com
+                                </a>
+                                <div class="mobile-socials">
+                                    <ul class="mobile-socials__list">
+                                        <li class="mobile-socials__item"><a href=""
+                                                class="mobile-socials__link">Instagram</a></li>
+                                        <li class="mobile-socials__item"><a href=""
+                                                class="mobile-socials__link">Twitter</a>
+                                        </li>
+                                        <li class="mobile-socials__item"><a href=""
+                                                class="mobile-socials__link">Facebook</a>
+                                        </li>
+                                        <li class="mobile-socials__item"><a href=""
+                                                class="mobile-socials__link">Linkedin</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </header>
-
     <main>
         <div class="container section">
             <section class="filters">
@@ -277,6 +335,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/hamburger-menu.js"></script>
 </body>
 
 </html>
