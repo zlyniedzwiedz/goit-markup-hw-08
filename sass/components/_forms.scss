@@ -238,3 +238,31 @@
         }
     }
 }
+
+@media only screen and (max-width:767px) {
+    .newsletter {
+        display: flex;
+        padding: 0;
+        margin: 60px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &__email {
+            min-width: 450px;
+        }
+
+        &__icon {
+            right: 120px;
+            top: 90px;
+        }
+    }
+}
