@@ -768,7 +768,8 @@
   z-index: 12;
   background: rgba(0, 0, 0, 0.3);
 }
-.modal__background .modal {
+
+.modal {
   position: absolute;
   top: 221px;
   width: 528px;
@@ -777,7 +778,7 @@
   background-color: white;
   border-radius: 4px;
 }
-.modal__background .modal button[type=button] {
+.modal button[type=button] {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -836,6 +837,18 @@
   }
   100% {
     transform: translateX(1500px) scaleX(1) rotate(360deg);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    top: 93px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .modal {
+    top: 93px;
+    justify-content: center;
   }
 }
 .order {
