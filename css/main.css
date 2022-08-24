@@ -686,6 +686,11 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
+@media only screen and (max-width: 767px) {
+  .filters__button {
+    margin-top: 15px;
+  }
+}
 .product {
   display: flex;
 }
