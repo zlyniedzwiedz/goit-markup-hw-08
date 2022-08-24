@@ -1,13 +1,17 @@
 .footer {
     width: 100%;
-    height: 252px;
+    min-height: 252px;
     background-color: $background-color;
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+    }
 
     &__left {
         display: flex;
         flex-direction: row;
     }
-
 
     &__header {
         color: $alternative-text-color;
@@ -82,7 +86,7 @@
             fill: $alternative-text-color;
             width: 44px;
             height: 44px;
-            
+
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
 
@@ -93,9 +97,29 @@
                 transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
             }
         }
+
         &__icon {
             width: 20px;
             height: 20px;
         }
     }
+}
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+    .footer {
+        &__row {
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        &__left {
+            justify-content: center;
+        }
+        &__right {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
 }
