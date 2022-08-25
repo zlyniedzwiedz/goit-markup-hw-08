@@ -85,7 +85,7 @@
 
 @media only screen and (min-width:768px) and (max-width:1199px) {
     .slider {
-        width: 100%;
+
         background: $slider-background url("../images/tablet-overlay.jpg")no-repeat center;
     }
 
@@ -131,7 +131,7 @@
 
 @media only screen and (max-width:767px) {
     .slider {
-        width: 100%;
+
         background: $slider-background url("../images/mobile-overlay.jpg")no-repeat center;
     }
 

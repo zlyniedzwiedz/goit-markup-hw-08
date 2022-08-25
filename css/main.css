@@ -207,7 +207,6 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .slider {
-    width: 100%;
     background: #2f303a url("../images/tablet-overlay.jpg") no-repeat center;
   }
   .main-header {
@@ -239,7 +238,6 @@
 }
 @media only screen and (max-width: 767px) {
   .slider {
-    width: 100%;
     background: #2f303a url("../images/mobile-overlay.jpg") no-repeat center;
   }
   .main-header {
