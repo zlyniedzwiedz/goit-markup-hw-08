@@ -91,7 +91,7 @@
 
 .checkbox {
     position: relative;
-    margin: auto;
+    margin-left: 40px;
 
     &__input {
         position: absolute;
@@ -111,7 +111,7 @@
     height: 120px;
     text-indent: 0px;
     resize: none;
-    // margin-bottom: 20px;
+
 }
 
 .order__checkbox input:checked~.icon-check {
@@ -288,8 +288,15 @@
     }
 
     .order {
+        max-width: 100%;
+
         &__input {
-            width: 370px;
+            max-width: 100%;
+
+        }
+
+        &__container {
+            max-width: 370px;
         }
     }
 
@@ -300,12 +307,14 @@
     #order__policies {
         font-size: 12px;
         line-height: 1.16;
-        width: 346px;
+        max-width: 346px;
+
 
     }
 
     .checkbox {
         max-width: 370px;
+
 
     }
 }

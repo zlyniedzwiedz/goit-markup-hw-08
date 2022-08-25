@@ -842,7 +842,7 @@
 .modal {
   position: absolute;
   top: 221px;
-  width: 528px;
+  max-width: 528px;
   min-height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: white;
@@ -914,13 +914,16 @@
     max-width: 450px;
     top: 93px;
     justify-content: center;
+    margin: 0 15px;
   }
 }
 @media only screen and (max-width: 767px) {
   .modal {
-    max-width: 450px;
+    max-width: 100%;
     top: 93px;
     justify-content: center;
+    align-items: center;
+    margin: 0 15px;
   }
 }
 .order {
@@ -999,7 +1002,7 @@
 
 .checkbox {
   position: relative;
-  margin: auto;
+  margin-left: 40px;
 }
 .checkbox__input {
   position: absolute;
@@ -1161,8 +1164,14 @@
     right: 60px;
     top: 90px;
   }
+  .order {
+    max-width: 100%;
+  }
   .order__input {
-    width: 370px;
+    max-width: 100%;
+  }
+  .order__container {
+    max-width: 370px;
   }
   #order__comment {
     width: 370px;
@@ -1170,7 +1179,7 @@
   #order__policies {
     font-size: 12px;
     line-height: 1.16;
-    width: 346px;
+    max-width: 346px;
   }
   .checkbox {
     max-width: 370px;
