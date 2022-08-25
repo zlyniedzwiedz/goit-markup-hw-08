@@ -208,6 +208,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .slider {
     width: 100%;
+    background: #2f303a url("../images/tablet-overlay.jpg") no-repeat center;
   }
   .main-header {
     height: 400px;
@@ -226,19 +227,20 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .slider {
-    background: #2f303a url("../images/mobile-overlay@2x.jpg") no-repeat center;
+    background: #2f303a url("../images/tablet-overlay@2x.jpg") no-repeat center;
     background-size: cover;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 3), only screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 288dpi), only screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 3dppx) {
   .slider {
-    background: #2f303a url("../images/mobile-overlay@3x.jpg") no-repeat center;
+    background: #2f303a url("../images/tablet-overlay@3x.jpg") no-repeat center;
     background-size: cover;
   }
 }
 @media only screen and (max-width: 767px) {
   .slider {
     width: 100%;
+    background: #2f303a url("../images/mobile-overlay.jpg") no-repeat center;
   }
   .main-header {
     height: 400px;
