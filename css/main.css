@@ -1139,6 +1139,9 @@
   .checkbox {
     max-width: 370px;
   }
+  .checkbox__input {
+    top: 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   .newsletter {
@@ -1183,6 +1186,9 @@
   }
   .checkbox {
     max-width: 370px;
+  }
+  .checkbox__input {
+    top: 0;
   }
 }
 .navbutton-mobile {

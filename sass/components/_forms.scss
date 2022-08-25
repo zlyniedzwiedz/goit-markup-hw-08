@@ -254,6 +254,10 @@
 
     .checkbox {
         max-width: 370px;
+
+        &__input {
+            top: 0;
+        }
     }
 }
 
@@ -314,6 +318,10 @@
 
     .checkbox {
         max-width: 370px;
+
+        &__input {
+            top: 0;
+        }
 
 
     }
