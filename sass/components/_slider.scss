@@ -87,6 +87,7 @@
     .slider {
 
         background: $slider-background url("../images/tablet-overlay.jpg")no-repeat center;
+        background-size: cover;
     }
 
     .main-header {
@@ -133,6 +134,7 @@
     .slider {
 
         background: $slider-background url("../images/mobile-overlay.jpg")no-repeat center;
+        background-size: cover;
     }
 
     .main-header {
