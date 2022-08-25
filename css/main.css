@@ -774,7 +774,7 @@
 }
 .product__image {
   width: 370px;
-  height: 294px;
+  height: auto;
   display: block;
 }
 .product__card {
@@ -822,6 +822,8 @@
   .product__image {
     min-width: 100%;
     height: auto;
+    display: block;
+    object-fit: contain;
   }
   .product__card {
     width: 100%;

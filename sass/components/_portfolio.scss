@@ -39,8 +39,11 @@
 
     &__image {
         width: 370px;
-        height: 294px;
+        height: auto;
         display: block;
+
+
+
     }
 
     &__card {
@@ -101,6 +104,8 @@
         &__image {
             min-width: 100%;
             height: auto;
+            display: block;
+            object-fit: contain;
         }
 
         &__card {
