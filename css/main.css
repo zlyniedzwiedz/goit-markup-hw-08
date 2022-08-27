@@ -302,6 +302,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .features__list {
     display: flex;
     flex-direction: column;
@@ -324,6 +328,10 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -469,8 +477,14 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .team {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
   .team__title {
-    margin-top: 60px;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    margin-top: 0;
   }
   .team__cards {
     display: flex;
@@ -485,6 +499,10 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .team__cards {
     display: flex;
     flex-wrap: wrap;
@@ -494,7 +512,8 @@
     flex-basis: calc((100% - 30px) / 2);
   }
   .team__title {
-    margin-top: 60px;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
   .team + .section {
     margin-top: 45px;
@@ -699,6 +718,14 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .clients {
+    padding-bottom: 60px;
+    padding-top: 0;
+  }
+  .clients__title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
   .clients__list {
     display: flex;
     flex-wrap: wrap;
@@ -714,6 +741,14 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+    padding-bottom: 60px;
+    padding-top: 0;
+  }
+  .clients__title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
   .clients__list {
     display: flex;
     flex-wrap: wrap;
@@ -762,11 +797,13 @@
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .filters {
     padding-top: 60px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
   .filters {
     padding-top: 60px;
+    margin-bottom: 40px;
   }
   .filters__button {
     margin-top: 15px;
@@ -844,6 +881,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .product {
+    padding-bottom: 60px;
+  }
   .product__gallery {
     display: flex;
     width: 100%;
@@ -865,6 +905,9 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .product {
+    padding-bottom: 60px;
+  }
   .product__gallery {
     display: flex;
     flex-wrap: wrap;
@@ -1483,11 +1526,6 @@ p {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.section {
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 
 .container {

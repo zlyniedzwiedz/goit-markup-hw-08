@@ -40,6 +40,9 @@
 
 @media only screen and (max-width:767px) {
     .features {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
         &__list {
             display: flex;
             flex-direction: column;
@@ -73,6 +76,9 @@
 
 @media only screen and (min-width:768px) and (max-width:1199px) {
     .features {
+        padding-top: 60px;
+        padding-bottom: 45px;
+
         &__list {
             display: flex;
             flex-wrap: wrap;

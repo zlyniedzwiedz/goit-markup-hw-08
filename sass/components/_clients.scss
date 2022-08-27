@@ -48,6 +48,14 @@
 
 @media only screen and (max-width:767px) {
     .clients {
+        padding-bottom: 60px;
+        padding-top: 0;
+
+        &__title {
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+
         &__list {
             display: flex;
             flex-wrap: wrap;
@@ -69,6 +77,14 @@
 
 @media only screen and (min-width:768px) and (max-width:1199px) {
     .clients {
+        padding-bottom: 60px;
+        padding-top: 0;
+
+        &__title {
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+
         &__list {
             display: flex;
             flex-wrap: wrap;
