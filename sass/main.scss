@@ -41,3 +41,19 @@ p {
 address {
     font-style: normal;
 }
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+    .section {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .section {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 60px;
+    }
+}

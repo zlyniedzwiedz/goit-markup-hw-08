@@ -1,8 +1,12 @@
 .features {
-    display: flex;
+    padding-bottom: 94px;
     padding-top: 94px;
 
-    gap: 30px;
+    &__list {
+        display: flex;
+
+        gap: 30px;
+    }
 
     &__background {
         height: 120px;
@@ -36,11 +40,11 @@
 
 @media only screen and (max-width:767px) {
     .features {
-
-        display: flex;
-        flex-direction: column;
-        padding-top: 60px;
-
+        &__list {
+            display: flex;
+            flex-direction: column;
+            padding-top: 0;
+        }
 
         &__background {
             height: 120px;
@@ -69,12 +73,17 @@
 
 @media only screen and (min-width:768px) and (max-width:1199px) {
     .features {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
 
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+            padding-top: 0;
 
-        padding-top: 60px;
+        }
+
+
+
 
         &__client {
             flex-basis: calc((100% - 30px) / 2);

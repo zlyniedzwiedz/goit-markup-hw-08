@@ -1,5 +1,7 @@
 .team {
     background: $team-background-color;
+    padding-bottom: 94px;
+    padding-top: 94px;
 
     &__cards {
         display: flex;
@@ -91,9 +93,15 @@
 
 @media only screen and (max-width:767px) {
 
-    .team__cards {
-        display: flex;
-        flex-direction: column;
+    .team {
+        &__title {
+            margin-top: 60px;
+        }
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .card {
@@ -120,6 +128,14 @@
             flex-basis: calc((100% - 30px) / 2);
         }
 
+        &__title {
+            margin-top: 60px;
+
+        }
+    }
+
+    .team + .section {
+        margin-top: 45px;
     }
 
     .card {

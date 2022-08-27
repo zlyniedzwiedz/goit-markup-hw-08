@@ -270,8 +270,11 @@
   }
 }
 .features {
-  display: flex;
+  padding-bottom: 94px;
   padding-top: 94px;
+}
+.features__list {
+  display: flex;
   gap: 30px;
 }
 .features__background {
@@ -299,10 +302,10 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .features {
+  .features__list {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 0;
   }
   .features__background {
     height: 120px;
@@ -321,11 +324,11 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .features {
+  .features__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-top: 60px;
+    padding-top: 0;
   }
   .features__client {
     flex-basis: calc((100% - 30px) / 2);
@@ -337,6 +340,9 @@
     padding: 25px 100;
   }
 }
+.whatwedo {
+  padding-bottom: 94px;
+}
 .whatwedo__title {
   font-family: "Roboto";
   font-weight: 700;
@@ -345,6 +351,7 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 .whatwedo__list {
   display: flex;
@@ -385,6 +392,8 @@
 }
 .team {
   background: #f5f4fa;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .team__cards {
   display: flex;
@@ -460,6 +469,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .team__title {
+    margin-top: 60px;
+  }
   .team__cards {
     display: flex;
     flex-direction: column;
@@ -480,6 +492,12 @@
   }
   .team__item {
     flex-basis: calc((100% - 30px) / 2);
+  }
+  .team__title {
+    margin-top: 60px;
+  }
+  .team + .section {
+    margin-top: 45px;
   }
   .card {
     width: 100%;
@@ -641,6 +659,10 @@
     justify-content: center;
   }
 }
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .clients__title {
   font-family: "Roboto";
   font-weight: 700;
@@ -709,6 +731,7 @@
 .filters {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
   margin-bottom: 56px;
 }
 .filters li {
@@ -736,13 +759,22 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .filters {
+    padding-top: 60px;
+  }
+}
 @media only screen and (max-width: 767px) {
+  .filters {
+    padding-top: 60px;
+  }
   .filters__button {
     margin-top: 15px;
   }
 }
 .product {
   display: flex;
+  padding-bottom: 94px;
 }
 .product__gallery {
   display: flex;
@@ -1467,4 +1499,19 @@ p {
 
 address {
   font-style: normal;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 60px;
+  }
 }/*# sourceMappingURL=main.css.map */

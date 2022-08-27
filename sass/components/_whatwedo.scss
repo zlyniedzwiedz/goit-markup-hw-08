@@ -1,4 +1,7 @@
 .whatwedo {
+    padding-bottom: 94px;
+
+
     &__title {
         font-family: "Roboto";
         font-weight: 700;
@@ -7,6 +10,7 @@
         letter-spacing: 0.03em;
         text-align: center;
         margin-bottom: 50px;
+        margin-top: 0;
     }
 
     &__list {
